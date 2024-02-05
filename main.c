@@ -48,10 +48,8 @@ int main()
         case 'C': 
             caseC(mat); break;
         default: break;
-        
-        scanf("%c",&ch);
         }
-    
-    return 0;
+        scanf("%c",&ch);
     }
+    return 0;
 }
