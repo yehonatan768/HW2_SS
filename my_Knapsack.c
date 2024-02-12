@@ -66,11 +66,14 @@ int main() {
 
     // Print selected items
     printf("Selected items:");
+    bool first = true;
     for (int i = 0; i < MAX_ITEMS; i++) {
         if (selected_bool[i]) {
-            printf(" %c",items[i]);
+            if (!first) printf(" ");
+            printf("%c",items[i]);
+            first = false;
         }
     }
-
+    printf("\n");
     return 0;
 }
