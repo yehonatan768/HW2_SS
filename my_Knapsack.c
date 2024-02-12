@@ -73,7 +73,6 @@ int main() {
             if (!first) printf(",");
             printf("%c",items[i]);
             first = false;
-            hasSelected = true;
         }
     }
     printf("]\n");
