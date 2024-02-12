@@ -74,6 +74,5 @@ int main() {
             first = false;
         }
     }
-    printf("\n");
     return 0;
 }
