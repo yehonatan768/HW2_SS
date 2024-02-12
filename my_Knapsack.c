@@ -69,7 +69,7 @@ int main() {
     bool first = true;
     for (int i = 0; i < MAX_ITEMS; i++) {
         if (selected_bool[i]) {
-            if (!first) printf(",");
+            if (!first) printf(", ");
             printf("%c",items[i]);
             first = false;
         }
