@@ -45,10 +45,10 @@ int main() {
     int maxValue;
 
     // Input items' values and weights
-    printf("Enter the values and weights for each item:\n");
     for (int i = 0; i < MAX_ITEMS; i++) {
-        printf("Item %c (value weight): ", 'A' + i);
-        scanf("%d %d", &values[i], &weights[i]);
+        char item;
+        printf("Item %d: ", i + 1);
+        scanf(" %c %d %d", &item, &values[i], &weights[i]);
     }
 
     // Determine maximum profit and selected items
