@@ -35,7 +35,7 @@ int main()
     char ch;
     
     scanf("%c",&ch);
-    while(ch!='D' || ch!= EOF)
+    while(ch!='D')
     {
         switch (ch)
         {
