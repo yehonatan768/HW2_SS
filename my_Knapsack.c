@@ -49,7 +49,7 @@ int main() {
     for (int i = 0; i < MAX_ITEMS; i++) {
         char item;
         int value, weight;
-        scanf("%c", &item);
+        scanf(" %c", &item);
         scanf("%d", &value);
         scanf("%d", &weight);
 
@@ -67,7 +67,6 @@ int main() {
     // Print selected items
     printf("Items that give the maximum profit: [");
     bool first = true;
-    bool hasSelected = false;
     for (int i = 0; i < MAX_ITEMS; i++) {
         if (selected_bool[i]) {
             if (!first) printf(",");
