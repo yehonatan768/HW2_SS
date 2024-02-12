@@ -3,55 +3,37 @@
 #define INT_MAX 999999
 
 
-int caseA(int mat [10][10]) {
-    insert(mat);
 
-    return 0;
-}
-
-int caseB(int mat [10][10]) {
-    int x,y; 
-    scanf("%d",&x);
-    scanf("%d",&y);
-    has_path(mat,x,y);
-    printf("\n");
-
-    return 0;
-}
-
-int caseC(int mat [10][10]) {
-    int x,y; 
-    scanf("%d",&x);
-    scanf("%d",&y);
-    printf("%d",shortest_path(mat,x,y));
-    printf("\n");
-
-    return 0;
-}
 
 int main()
 {
     int mat[10][10];
     char ch;
-    
+    int x,y;
     scanf("%c",&ch);
     while(ch!='D')
     {
-        switch (ch)
-        {
-        case 'A': 
-            caseA(mat); break;
+    if (ch == 'A')
+    {
+        insert(mat);
+    }
+    else if (ch == 'B'){
 
-        case 'B': 
-            caseB(mat); break;
-
-        case 'C': 
-            caseC(mat); break;
-        default: break;
+        scanf("%d",&x);
+        scanf("%d",&y);
+        has_path(mat,x,y);
+        printf("\n");
         
-        scanf("%c",&ch);
-        }
+    }
+    else if (ch == 'C')
+    {
+        scanf("%d",&x);
+        scanf("%d",&y);
+        printf("%d",shortest_path(mat,x,y));
+        printf("\n");
+    }
+    scanf("%c",&ch);
+    }
     
     return 0;
-    }
 }
